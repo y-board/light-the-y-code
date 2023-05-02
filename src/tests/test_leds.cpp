@@ -1,13 +1,14 @@
+#include <pgmspace.h>
+
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN  5
-#define LED_COUNT 10
+#define LED_PIN 5
+#define LED_COUNT 20
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
-
 void setup() {
-    strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
+  strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();            // Turn OFF all pixels ASAP
   strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
 
@@ -18,7 +19,6 @@ void setup() {
     int b = i & 1 ? 255 : 0;
     strip.setPixelColor(i, r, g, b);
     strip.show(); // This sends the updated pixel color to the hardware.
-    
   }
 
   // printf("Done setup\n");

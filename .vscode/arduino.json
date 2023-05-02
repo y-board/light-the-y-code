@@ -1,8 +1,0 @@
-{
-    "board": "esp32:esp32:esp32s3",
-    "programmer": "esptool",
-    "port": "COM3",
-    "sketch": "tests\\test_leds.ino",
-    "output": "../ArduinoOutput"
-
-}
