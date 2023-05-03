@@ -8,8 +8,6 @@ void ex1() {
   leds_set_color(1, 255, 0, 0);
   leds_set_color(13, 0, 255, 0);
   leds_set_color(17, 0, 0, 255);
-  while (1)
-    ;
 }
 
 void ex2() {
@@ -28,17 +26,17 @@ void ex2() {
   leds_set_color(9, 255, 0, 0);
   delay(2000);
   leds_set_color(9, 0, 0, 0);
-  while (1)
-    ;
 }
 
-void ex3() {}
+void ex3() { speaker_play_note(NOTE_C5, 1000); }
 
 int main() {
   // ex1();
   // ex2();
   ex3();
 
+  while (1)
+    ;
   test_leds();
 
   while (1) {

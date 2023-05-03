@@ -1,5 +1,7 @@
 #include "yboard.h"
 
+#include "Arduino.h"
+
 void test_leds() {
   Serial.println("Running LED test.");
 

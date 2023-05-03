@@ -1,3 +1,11 @@
+# Outline
+1. Coding / IDE
+1. LEDs
+1. Delays 
+    * ms
+1. Tone
+1. Variables
+
 # Coding basics
 - statements and semicolons
 - sequential execution
@@ -7,11 +15,18 @@
 # Calling functions
 - Call functions with hard-coded values
 - Turn on LEDs
+
+# Delays
 - Make speaker buzz?
 - Delay(Ms)
 - #defined values
 
-## exercises 
+## Questions
+1. Find your favorite RGB color.
+
+1. What happens if you (255, 255, 255) or (0, 0, 0)
+
+## Challenges
 1. Turn on LEDs 1, 13, and 17. Make them 3 different colors.
 
 1. Turn on LED5 as red. Wait 2 seconds and then turn it off and immediately turn on LED6 as red. Wait 2 seconds and move the red light to LED7. Repeat this delay and move the red light to LED8, then LED9, then off.
@@ -36,4 +51,3 @@
 # If statements
 
 
-# Loops
