@@ -8,6 +8,7 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 void leds_init() {
   strip.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
+  leds_set_brightness(50);
 }
 
 void leds_set_brightness(uint8_t brightness) {
