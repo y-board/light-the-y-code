@@ -15,11 +15,20 @@
 
 #define LED_PIN 5
 #define LED_COUNT 20
+#define SWITCH1_PIN 9
+#define SWITCH2_PIN 10
+#define BUTTON1_PIN 11
+#define BUTTON2_PIN 12
+#define BUTTON3_PIN 13
 
 ////////////////////////////// LEDs ///////////////////////////////////////////
 void leds_init();
 void leds_set_brightness(uint8_t brightness);
 void leds_set_color(uint16_t index, uint8_t red, uint8_t green, uint8_t blue);
+
+////////////////////////////// Switches/Buttons ///////////////////////////////
+bool switches_get(uint8_t switch_idx);
+bool buttons_get(uint8_t button_idx);
 
 ////////////////////////////// Timer Interrupt ////////////////////////////////
 void timer_init();
