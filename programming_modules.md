@@ -12,9 +12,9 @@
 - #defined values
 
 ## exercises 
-1. Turn on LEDs 1, 5, and 10. Make them 3 different colors.
+1. Turn on LEDs 1, 13, and 17. Make them 3 different colors.
 
-1. Turn on LED1 as red. Wait 2 seconds and then turn it off and then turn on LED2 as red. Wait 2 seconds and move the red light to LED3. Repeat this delay and move the red light to LED4 and then LED5. 
+1. Turn on LED5 as red. Wait 2 seconds and then turn it off and immediately turn on LED6 as red. Wait 2 seconds and move the red light to LED7. Repeat this delay and move the red light to LED8, then LED9, then off.
 
 1. Make the speaker play a C note for 3 seconds and then stop. 
 

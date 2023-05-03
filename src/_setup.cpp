@@ -2,9 +2,12 @@
 
 #include "main.h"
 
+#include "yboard.h"
+
 void setup() {
   Serial.begin(9600);
-
+  leds_init();
+  delay(1000);
   main();
   while (1)
     ;

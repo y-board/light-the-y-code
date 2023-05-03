@@ -3,9 +3,8 @@
 void test_leds() {
   Serial.println("Running LED test.");
 
-  strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
-  strip.show();            // Turn OFF all pixels ASAP
-  strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
+  // Set BRIGHTNESS to about 1/5 (max = 255)
+  leds_set_brightness(50);
 
   int i = 0;
   int led_val = 0;
@@ -15,8 +14,8 @@ void test_leds() {
     int r = led_val & 4 ? 255 : 0;
     int g = led_val & 2 ? 255 : 0;
     int b = led_val & 1 ? 255 : 0;
-    strip.setPixelColor(i, r, g, b);
-    strip.show(); // This sends the updated pixel color to the hardware.
+
+    leds_set_color(i, r, g, b);
   }
   Serial.println("LED test complete.");
 }
