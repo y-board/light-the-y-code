@@ -1,8 +1,8 @@
 #include "Arduino.h"
 
-#include "main.h"
-
 #include "yboard.h"
+
+void main();
 
 void setup() {
   Serial.begin(9600);
