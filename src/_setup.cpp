@@ -2,7 +2,7 @@
 
 #include "yboard.h"
 
-void main();
+int main();
 
 void setup() {
   Serial.begin(9600);
