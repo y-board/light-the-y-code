@@ -1,3 +1,5 @@
+#include "yboard.h"
+
 void delay_exploration();
 void delay_challenge1();
 void delay_challenge2();
