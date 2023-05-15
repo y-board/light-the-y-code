@@ -1,3 +1,5 @@
+#include "yboard.h"
+
 void led_exploration();
 void led_challenge1();
 void led_challenge2();
