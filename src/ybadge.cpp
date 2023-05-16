@@ -46,6 +46,8 @@ bool buttons_get(uint8_t button_idx) {
   }
 }
 
+int knob_get() { return analogRead(KNOB_PIN); }
+
 ////////////////////////////// Timer Interrupt
 ///////////////////////////////////
 
