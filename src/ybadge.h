@@ -1,7 +1,9 @@
-#ifndef YBOARD_H
-#define YBOARD_H
+#ifndef YBADGE_H
+#define YBADGE_H
 
 #include <stdint.h>
+
+#include "Arduino.h"
 
 // Buzzer pin: 33
 // LEDs pin: 5
@@ -127,4 +129,4 @@ void speaker_play_note(unsigned int freq, unsigned long duration);
 #define NOTE_D8 4699
 #define NOTE_DS8 4978
 
-#endif /* YBOARD_H */
+#endif /* YBADGE_H */
