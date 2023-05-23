@@ -1,5 +1,7 @@
 void led_activity();
 void delay_activity();
+void sound_activity();
+void variables_activity();
 
 int main() {
   // This function should call ONE of the functions below.
@@ -8,6 +10,8 @@ int main() {
   
   led_activity();
   // delay_activity();
+  // sound_activity();
+  // variables_activity();
 
   while (1)
     ;
