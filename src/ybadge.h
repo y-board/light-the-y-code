@@ -21,7 +21,7 @@
 ////////////////////////////// LEDs ///////////////////////////////////////////
 
 /*
-*  This function is only used behind the scenes for configuration and should not be used in your code.
+*  This function is only used behind the scenes to configure the LEDs and should not be used in your code.
 */
 void leds_init();
 
@@ -70,7 +70,7 @@ int knob_get();
 ////////////////////////////// Timer Interrupt ////////////////////////////////
 
 /*
-*  This function is only used behind the scenes for configuration and should not be used in your code.
+*  This function is only used behind the scenes to configure the timer interrupt and should not be used in your code.
 */
 void timer_init();
 
