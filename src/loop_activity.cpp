@@ -18,7 +18,6 @@ void loop_activity() {
 
 void loop_exploration() {
     // Add your code here for exploration activities
-    
 }
 
 void loop_challenge1() {

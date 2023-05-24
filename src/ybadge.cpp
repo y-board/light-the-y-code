@@ -51,8 +51,7 @@ int knob_get() {
   return map(analogRead(KNOB_PIN), 0, 4095, 0, 100);
 }
 
-////////////////////////////// Timer Interrupt
-///////////////////////////////////
+////////////////////////////// Timer Interrupt ///////////////////////////////////
 
 hw_timer_t *interrupt_timer = NULL;
 
@@ -67,8 +66,7 @@ void timer_init() {
   timerAlarmWrite(interrupt_timer, 100, true);
 }
 
-////////////////////////////// Speaker/Tones
-/////////////////////////////////////
+////////////////////////////// Speaker/Tones /////////////////////////////////////
 
 void speaker_play_note(unsigned int freq, unsigned long duration) {
   tone(TONE_PIN, freq, duration);
