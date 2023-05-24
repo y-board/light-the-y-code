@@ -8,12 +8,12 @@ int main() {
   // This function should call ONE of the functions below.
   // Uncomment or comment the lines so that just the function
   // you want to call is uncommented.
-  
-  // led_activity();
+
+  led_activity();
   // delay_activity();
   // sound_activity();
   // variables_activity();
-  loop_activity();
+  // loop_activity();
 
   while (1)
     ;

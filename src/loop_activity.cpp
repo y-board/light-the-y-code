@@ -18,13 +18,7 @@ void loop_activity() {
 
 void loop_exploration() {
     // Add your code here for exploration activities
-    while(true) {
-        for(int i = 20; i >= 1; --i) {
-            leds_set_color(i, 255, 255, 255);
-            delay(100);
-            leds_set_color(i, 0, 0, 0);
-        }
-    }
+    
 }
 
 void loop_challenge1() {
