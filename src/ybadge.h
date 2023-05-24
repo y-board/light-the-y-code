@@ -14,7 +14,7 @@
 // Button3 pin: 13
 
 #define TONE_PIN 33
-
+#define KNOB_PIN 14
 #define LED_PIN 5
 #define LED_COUNT 20
 #define SWITCH1_PIN 9
@@ -31,6 +31,7 @@ void leds_set_color(uint16_t index, uint8_t red, uint8_t green, uint8_t blue);
 ////////////////////////////// Switches/Buttons ///////////////////////////////
 bool switches_get(uint8_t switch_idx);
 bool buttons_get(uint8_t button_idx);
+int knob_get();
 
 ////////////////////////////// Timer Interrupt ////////////////////////////////
 void timer_init();

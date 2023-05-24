@@ -46,6 +46,11 @@ bool buttons_get(uint8_t button_idx) {
   }
 }
 
+int knob_get() {
+  // Map value from 0 to 100
+  return map(analogRead(KNOB_PIN), 0, 4095, 0, 100);
+}
+
 ////////////////////////////// Timer Interrupt
 ///////////////////////////////////
 
