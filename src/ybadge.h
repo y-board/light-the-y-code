@@ -62,7 +62,7 @@ bool buttons_get(uint8_t button_idx);
 /*
 *  This function returns the position of the knob.
 *  The int return type means that this function returns an integer value.
-*  The value returned is between 0 and 100, representing the position of the knob.
+*  The value returned is between 0 and 100, representing the position of the knob (0 is fully counter-clockwise, 100 is fully clockwise).
 */
 int knob_get();
 
