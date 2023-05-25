@@ -25,9 +25,9 @@ void leds_set_color(uint16_t index, uint8_t red, uint8_t green, uint8_t blue) {
 bool switches_get(uint8_t switch_idx) {
   switch (switch_idx) {
   case 1:
-    return digitalRead(SWITCH1_PIN);
+    return !digitalRead(SWITCH1_PIN);
   case 2:
-    return digitalRead(SWITCH2_PIN);
+    return !digitalRead(SWITCH2_PIN);
   default:
     return false;
   }
@@ -36,11 +36,11 @@ bool switches_get(uint8_t switch_idx) {
 bool buttons_get(uint8_t button_idx) {
   switch (button_idx) {
   case 1:
-    return digitalRead(BUTTON1_PIN);
+    return !digitalRead(BUTTON1_PIN);
   case 2:
-    return digitalRead(BUTTON2_PIN);
+    return !digitalRead(BUTTON2_PIN);
   case 3:
-    return digitalRead(BUTTON3_PIN);
+    return !digitalRead(BUTTON3_PIN);
   default:
     return false;
   }
@@ -51,8 +51,7 @@ int knob_get() {
   return map(analogRead(KNOB_PIN), 0, 4095, 0, 100);
 }
 
-////////////////////////////// Timer Interrupt
-///////////////////////////////////
+////////////////////////////// Timer Interrupt ///////////////////////////////////
 
 hw_timer_t *interrupt_timer = NULL;
 
@@ -67,8 +66,7 @@ void timer_init() {
   timerAlarmWrite(interrupt_timer, 100, true);
 }
 
-////////////////////////////// Speaker/Tones
-/////////////////////////////////////
+////////////////////////////// Speaker/Tones /////////////////////////////////////
 
 void speaker_play_note(unsigned int freq, unsigned long duration) {
   tone(TONE_PIN, freq, duration);
