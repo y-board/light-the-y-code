@@ -1,27 +1,27 @@
 #include "ybadge.h"
 
-void sound_exploration();
-void sound_challenge1();
-void sound_challenge2();
+void conditionals_exploration();
+void conditionals_challenge1();
+void conditionals_challenge2();
 
-void sound_activity() {
+void conditionals_activity() {
     // This function should call ONE of your functions below.
     // Uncomment or comment the lines so that just the function
     // you want to call is uncommented.
 
-    sound_exploration();
-    // sound_challenge1();
-    // sound_challenge2();
+    conditionals_exploration();
+    // conditionals_challenge1();
+    // conditionals_challenge2();
 }
 
-void sound_exploration() {
+void conditionals_exploration() {
     // Add your code here for exploration activities
 }
 
-void sound_challenge1() {
+void conditionals_challenge1() {
     // Add your code here for challenge 1
 }
 
-void sound_challenge2() {
+void conditionals_challenge2() {
     // Add your code here for challenge 2
 }

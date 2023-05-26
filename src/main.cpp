@@ -3,6 +3,7 @@ void delay_activity();
 void sound_activity();
 void variables_activity();
 void loop_activity();
+void conditionals_activity();
 
 int main() {
   // This function should call ONE of the functions below.
@@ -14,6 +15,7 @@ int main() {
   // sound_activity();
   // variables_activity();
   // loop_activity();
+  // conditionals_activity();
 
   while (1)
     ;
