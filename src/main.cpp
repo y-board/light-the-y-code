@@ -1,3 +1,4 @@
+void test_all_features();
 void led_activity();
 void delay_activity();
 void sound_activity();
@@ -11,7 +12,8 @@ int main() {
   // Uncomment or comment the lines so that just the function
   // you want to call is uncommented.
 
-  led_activity();
+  test_all_features();
+  // led_activity();
   // delay_activity();
   // sound_activity();
   // variables_activity();
