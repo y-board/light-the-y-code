@@ -1,13 +1,12 @@
 #include "Arduino.h"
 
-#include "ybadge.h"
+#include "yboard.h"
 
 int main();
 
 void setup() {
     Serial.begin(9600);
-    leds_init();
-    timer_init();
+    Yboard.setup();
     delay(1000);
     main();
     while (1)
