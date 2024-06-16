@@ -1,4 +1,4 @@
-#include "ybadge.h"
+#include "yboard.h"
 
 void sound_exploration();
 void sound_challenge1();

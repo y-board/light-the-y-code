@@ -1,3 +1,3 @@
-# y-badge-code
+# Light the Y Code
 
-Click this [link](https://y-badge.github.io/) for instructions on how to program your Y-badge using this code base.
+This repository contains the code for the [Light the Y](https://y-board.github.io/light-the-y/) coding activity.
