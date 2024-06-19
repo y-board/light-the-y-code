@@ -6,6 +6,8 @@ void variables_activity();
 void loop_activity();
 void conditionals_activity();
 void badge_activity();
+void temperature_activity();
+void accelerometer_activity();
 
 int main() {
     // This function should call ONE of the functions below.
@@ -19,6 +21,11 @@ int main() {
     // variables_activity();
     // loop_activity();
     // conditionals_activity();
+
+    /* !!!! NOTE: These modules can be only done with the v3 boards !!!! */
+    // temperature_activity();
+    // accelerometer_activity();
+
     // badge_activity();
 
     while (1)
