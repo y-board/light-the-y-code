@@ -17,7 +17,7 @@ void test_all_features() {
                 Yboard.set_all_leds_color(255, 0, 0);
                 Yboard.set_led_brightness(get_brightness());
                 if (check_switches()) {
-                    Yboard.play_note_background(NOTE_C4, 10);
+                    Yboard.play_notes("A");
                 }
             }
         } else if (Yboard.get_button(2)) {
@@ -25,7 +25,7 @@ void test_all_features() {
                 Yboard.set_all_leds_color(255, 255, 0);
                 Yboard.set_led_brightness(get_brightness());
                 if (check_switches()) {
-                    Yboard.play_note_background(NOTE_D4, 10);
+                    Yboard.play_notes("B");
                 }
             }
         } else if (Yboard.get_button(3)) {
@@ -33,7 +33,7 @@ void test_all_features() {
                 Yboard.set_all_leds_color(0, 255, 0);
                 Yboard.set_led_brightness(get_brightness());
                 if (check_switches()) {
-                    Yboard.play_note_background(NOTE_E4, 10);
+                    Yboard.play_notes("C");
                 }
             }
         } else {
