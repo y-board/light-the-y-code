@@ -8,6 +8,7 @@ void conditionals_activity();
 void badge_activity();
 void temperature_activity();
 void accelerometer_activity();
+void audio_file_activity();
 
 int main() {
     // This function should call ONE of the functions below.
@@ -25,6 +26,7 @@ int main() {
     /* !!!! NOTE: These modules can be only done with the v3 boards !!!! */
     // temperature_activity();
     // accelerometer_activity();
+    // audio_file_activity();
 
     // badge_activity();
 

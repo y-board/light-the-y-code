@@ -3,6 +3,7 @@
 void sound_exploration();
 void sound_challenge1();
 void sound_challenge2();
+void sound_challenge3();
 
 void sound_activity() {
     // This function should call ONE of your functions below.
@@ -12,6 +13,7 @@ void sound_activity() {
     sound_exploration();
     // sound_challenge1();
     // sound_challenge2();
+    // sound_challenge3();
 }
 
 void sound_exploration() {
@@ -24,4 +26,8 @@ void sound_challenge1() {
 
 void sound_challenge2() {
     // Add your code here for challenge 2
+}
+
+void sound_challenge3() {
+    // Add your code here for challenge 3
 }
