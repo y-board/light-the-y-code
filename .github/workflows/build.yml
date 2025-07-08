@@ -25,4 +25,4 @@ jobs:
         run: pip install --upgrade platformio
 
       - name: Build Project
-        run: pio ci --board esp32-s3-devkitc-1 --project-option="lib_deps=https://github.com/y-board/y-board-v3" src/*
+        run: pio ci --board esp32-s3-devkitc-1 --project-option="lib_deps=https://github.com/y-board/y-board-v4" src/*
