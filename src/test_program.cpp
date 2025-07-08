@@ -1,6 +1,6 @@
 #include "yboard.h"
 
-int get_brightness();
+int get_knob_brightness();
 bool check_switches();
 
 /*
@@ -10,12 +10,12 @@ bool check_switches();
  * switches is on It will also change the brightness of the LEDs depending on the position of the
  * knob.
  */
-void test_all_features() {
+void test_program() {
     while (true) {
         if (Yboard.get_button(1)) {
             while (Yboard.get_button(1)) {
                 Yboard.set_all_leds_color(255, 0, 0);
-                Yboard.set_led_brightness(get_brightness());
+                Yboard.set_led_brightness(get_knob_brightness());
                 if (check_switches()) {
                     Yboard.play_notes("A");
                 }
@@ -23,7 +23,7 @@ void test_all_features() {
         } else if (Yboard.get_button(2)) {
             while (Yboard.get_button(2)) {
                 Yboard.set_all_leds_color(255, 255, 0);
-                Yboard.set_led_brightness(get_brightness());
+                Yboard.set_led_brightness(get_knob_brightness());
                 if (check_switches()) {
                     Yboard.play_notes("B");
                 }
@@ -31,20 +31,20 @@ void test_all_features() {
         } else if (Yboard.get_button(3)) {
             while (Yboard.get_button(3)) {
                 Yboard.set_all_leds_color(0, 255, 0);
-                Yboard.set_led_brightness(get_brightness());
+                Yboard.set_led_brightness(get_knob_brightness());
                 if (check_switches()) {
                     Yboard.play_notes("C");
                 }
             }
         } else {
             Yboard.set_all_leds_color(255, 255, 255);
-            Yboard.set_led_brightness(get_brightness());
+            Yboard.set_led_brightness(get_knob_brightness());
         }
     }
 }
 
 // This function converts the knob's output (1-100) to a brightness value (0-255)
-int get_brightness() {
+int get_knob_brightness() {
     int brightness = 255 * Yboard.get_knob() / 100;
     return floor(brightness);
 }
