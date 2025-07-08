@@ -10,7 +10,7 @@ bool check_switches();
  * switches is on It will also change the brightness of the LEDs depending on the position of the
  * knob.
  */
-void test_all_features() {
+void test_program() {
     while (true) {
         if (Yboard.get_button(1)) {
             while (Yboard.get_button(1)) {
