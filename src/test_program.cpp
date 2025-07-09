@@ -74,7 +74,6 @@ static void test_program_setup() {
 
 static void test_program_loop() {
     // Update display
-    // Yboard.display.clearDisplay();
     draw_switches_state();
     draw_buttons_state();
     draw_knob_state();
@@ -209,11 +208,11 @@ static void draw_accelerometer_data() {
     }
 
     Yboard.display.setCursor(0, ACCEL_Y_DATA);
-    Yboard.display.printf("x:%i", (int)accel_data.x);
+    Yboard.display.printf("x:%-5i", (int)accel_data.x);
     Yboard.display.setCursor(42, ACCEL_Y_DATA);
-    Yboard.display.printf("y:%i", (int)accel_data.y);
+    Yboard.display.printf("y:%-5i", (int)accel_data.y);
     Yboard.display.setCursor(85, ACCEL_Y_DATA);
-    Yboard.display.printf("z:%i", (int)accel_data.z);
+    Yboard.display.printf("z:%-5i", (int)accel_data.z);
 }
 
 static void draw_text_titles() {
